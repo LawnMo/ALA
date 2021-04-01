@@ -34,7 +34,7 @@ volatile uint8_t tlc_needXLAT;
 
 /** Some of the extened library will need to be called after a successful
     update. */
-volatile void (*tlc_onUpdateFinished)(void);
+void (*tlc_onUpdateFinished)(void);
 
 /** Packed grayscale data, 24 bytes (16 * 12 bits) per TLC.
 
